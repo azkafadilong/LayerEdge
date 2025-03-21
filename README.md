@@ -5,4 +5,4 @@ wget https://raw.githubusercontent.com/azkafadilong/LayerEdge/main/auto.sh -O au
 
 chmod +x auto.sh
 
-./run.sh
+./auto.sh

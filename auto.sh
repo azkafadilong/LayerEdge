@@ -1,45 +1,30 @@
 #!/bin/bash
-set -e  # Dừng script ngay khi có lỗi
+set -e  # Exit immediately if any command fails
 
-# Hiển thị ASCII Art
+# ASCII Art: MEO THAN TAI
 echo -e "\033[32m"
-cat << "EOF"
-
-
- ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄       ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
-▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-▐░▌░▌   ▐░▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌      ▀▀▀▀█░█▀▀▀▀ ▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌     ▐░▌      ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀█░█▀▀▀▀ 
-▐░▌▐░▌ ▐░▌▐░▌▐░▌          ▐░▌       ▐░▌          ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌▐░▌    ▐░▌          ▐░▌     ▐░▌       ▐░▌     ▐░▌     
-▐░▌ ▐░▐░▌ ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌          ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▌   ▐░▌          ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌     ▐░▌     
-▐░▌  ▐░▌  ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌          ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌          ▐░▌     ▐░░░░░░░░░░░▌     ▐░▌     
-▐░▌   ▀   ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌          ▐░▌     ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌   ▐░▌ ▐░▌          ▐░▌     ▐░█▀▀▀▀▀▀▀█░▌     ▐░▌     
-▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌          ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌    ▐░▌▐░▌          ▐░▌     ▐░▌       ▐░▌     ▐░▌     
-▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌          ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌     ▐░▐░▌          ▐░▌     ▐░▌       ▐░▌ ▄▄▄▄█░█▄▄▄▄ 
-▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌          ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌      ▐░░▌          ▐░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌
- ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀            ▀       ▀         ▀  ▀         ▀  ▀        ▀▀            ▀       ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀ 
-                                                                                                                                            
-
-
-EOF
+echo "  /\\_/\\    ╔╦╗╦  ╔═╗╔╦╗ ╔╦╗╦  ╔═╗╔╗╔  "
+echo " ( o.o )   ║║║║  ║╣  ║║  ║ ║  ║ ║║║║  "
+echo " > ^_^ <   ╩ ╩╩═╝╚═╝═╩╝  ╩ ╩═╝╚═╝╝╚╝  "
 echo -e "\033[0m"
 
-# Nhập Private Key từ người dùng
+# Prompt for Private Key (hidden input for security)
 echo -e "\033[33mPlease enter your CLI Node Private Key:\033[0m"
-read -rs PRIVATE_KEY  # `-r` giữ nguyên ký tự backslash, `-s` ẩn đầu vào
+read -rs PRIVATE_KEY  # `-r` keeps backslashes, `-s` hides input
 
-# Chờ 3 giây
+# Wait for 3 seconds
 echo "Starting installation..."
 sleep 3
 
-# Cập nhật hệ thống
+# Update the system
 echo "Updating system..."
 sudo apt update && sudo apt upgrade -y
 
-# Cài đặt dependencies
+# Install dependencies
 echo "Installing dependencies..."
 sudo apt install -y build-essential clang pkg-config git wget
 
-# Kiểm tra và cài đặt Go nếu chưa có
+# Check if Go is already installed, install if missing
 if ! command -v go &>/dev/null; then
     echo "Installing Go..."
     GO_VERSION="1.22.1"
@@ -52,14 +37,14 @@ else
     echo "Go is already installed: $(go version)"
 fi
 
-# Clone repository nếu chưa có
+# Clone the repository if it doesn't exist
 if [ ! -d "light-node" ]; then
     echo "Cloning repository..."
     git clone https://github.com/Layer-Edge/light-node.git
 fi
 cd light-node
 
-# Thiết lập biến môi trường
+# Set up environment variables
 echo "Setting up environment variables..."
 cat > .env <<EOF
 GRPC_URL=grpc.testnet.layeredge.io:9090
@@ -70,14 +55,14 @@ POINTS_API=https://light-node.layeredge.io
 PRIVATE_KEY='$PRIVATE_KEY'
 EOF
 
-# Xây dựng Light Node
-echo "Building Light node..."
+# Build Light Node
+echo "Building Light Node..."
 go mod tidy
 go build -o light-node
 sleep 3
 
-# Tạo service systemd
-echo "Creating Light Node Service file..."
+# Create systemd service file
+echo "Creating Light Node service file..."
 sudo install -m 644 /dev/null /etc/systemd/system/layer-edge.service
 sudo bash -c 'cat > /etc/systemd/system/layer-edge.service' <<EOF
 [Unit]
@@ -98,13 +83,13 @@ Environment="PATH=/usr/local/go/bin:/usr/bin:/bin:$HOME/.cargo/bin:$HOME/.risc0/
 WantedBy=multi-user.target
 EOF
 
-# Khởi động service
+# Start the service
 echo "Starting service..."
 sudo systemctl daemon-reload
 sudo systemctl enable layer-edge
 sudo systemctl restart layer-edge
 
-# Hoàn tất cài đặt
+# Installation complete
 echo -e "\033[32mInstallation completed!\033[0m"
 echo -e "\033[34mTo view logs:\033[0m"
 echo -e "\033[33mLight Node:\033[0m journalctl -fo cat -u layer-edge \033[35m(wait a bit for it to load)\033[0m"
